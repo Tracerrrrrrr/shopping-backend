@@ -16,7 +16,7 @@ app.use('/public', express.static('public'));
 app.use(express.urlencoded({
   extended:true,
 }))
-const Db='mongodb+srv://Shivam:0XybYaY4YsmjvMaL@cluster0.oysfx.mongodb.net/test';
+const Db='';
 mongoose.connect(Db).then(()=>{
   console.log("Connected to database successfully")
 }).catch(err=>{
